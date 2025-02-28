@@ -1,0 +1,130 @@
+@use './abstracts/variables' as var;
+
+html{
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: var.$font-size-base;
+    font-family: 'Popins', sans-serif;
+    color: white;
+    background-image: url('../img/logo-hero.@2x.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right -80px top;
+}
+
+// Contenedor principal del header y el hero
+.container {
+    display: flex;
+}
+
+.container-hero {
+    width: 60%;
+    padding: 0 100px;
+    background-color: var.$primary-color;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        padding-top: 40px;
+        margin-bottom: 80px;
+        figure {
+            margin: 0;
+            img {
+                width: 92px;
+            }
+            figcaption{
+                display: none;
+            }
+        }
+        
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 32px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    flex: auto;
+    margin-bottom: 60px;
+    p{
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0%;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 64px;
+        line-height: 80px;
+        letter-spacing: 0%;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    a {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: var.$secondary-color;
+        background-color: white;
+    }
+}
+
+.contact-us {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 40%;
+    padding-top: 40px;
+    padding-right: 80px;
+    .btn-contact {
+        display: inline-block;
+        padding: 16px 20px;
+        background-color: var.$primary-color;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+// Segunda sección
+.categories {
+    margin: 0;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px ;
+    background-color: white;
+    article {
+        width: 28%;
+        img {
+            width: 50px;
+        }
+        h3 {
+            color: var.$secondary-color;
+            margin: 20px 0 8px 0;
+        }
+        p {
+            color: var.$tertiary-color;
+        }
+    }
+}
