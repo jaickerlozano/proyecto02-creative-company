@@ -16,46 +16,56 @@ body {
     background-position: right -80px top;
 }
 
-// Contenedor principal del header y el hero
-.container {
-    display: flex;
+.container{
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 40px 16px 0 16px;
 }
 
-.container-hero {
-    width: 45%;
-    padding: 0 60px 0 100px;
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 32px;
-        padding-top: 40px;
-        margin-bottom: 60px;
-        figure {
-            margin: 0;
-            img {
-                width: 92px;
-            }
-            figcaption{
-                display: none;
-            }
+// Contenedor principal del header y el hero
+.container-header{
+    display: flex;
+    align-items: center;
+    gap: 148px;
+    margin-bottom: 60px;
+    figure {
+        margin: 0;
+        img {
+             width: 92px;
+         }
+         figcaption{
+            display: none;
         }
-        
-        nav {
-            ul {
-                display: flex;
-                list-style: none;
-                gap: 50px;
-                padding: 0;
-                li {
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-weight: 300;
-                        &:hover {
-                            text-decoration: underline;
-                        }
+    }
+    
+     nav {
+        width: 100%;
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 50px;
+            padding: 0;
+            li {
+                a {
+                    text-decoration: none;
+                     color: white;
+                    font-weight: 300;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li:last-child {
+                margin-left: auto;
+                a {
+                    display: inline-block;
+                    padding: 12px 18px;
+                    background-color: var.$primary-color;
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        background-color: var.$primary-color-dark;
                     }
                 }
             }
@@ -64,7 +74,7 @@ body {
 }
 
 .hero {
-    flex: auto;
+    width: 60%;
     margin-bottom: 60px;
     p{
         font-family: 'Poppins', sans-serif;
@@ -99,36 +109,17 @@ body {
     }
 }
 
-.contact-us {
-    display: flex;
-    justify-content: end;
-    align-items: start;
-    width: 40%;
-    padding-top: 40px;
-    padding-right: 80px;
-    .btn-contact {
-        display: inline-block;
-        padding: 12px 18px;
-        background-color: var.$primary-color;
-        text-decoration: none;
-        color: white;
-        &:hover {
-            background-color: var.$primary-color-dark;
-        }
-    }
-}
-
 
 // Segunda sección
 .categories {
-    margin: 0;
-    width: 65%;
+    translate: -150px; // Con esto traslado el contenedor 150px hacia la izquierda
+    width: 70%;
     display: flex;
     justify-content: space-between;
     padding: 30px ;
     background-color: white;
     article {
-        width: 28%;
+        width: 29%;
         img {
             width: 50px;
         }
